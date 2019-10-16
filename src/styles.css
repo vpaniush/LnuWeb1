@@ -107,7 +107,7 @@ body {
 }
 
 .footer#contact {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -123,7 +123,7 @@ body {
 }
 
 .send-message {
-    margin: 4% 40%;
+    margin: 4% 35% 10% 35%;
 }
 
 .send-message h3 {
