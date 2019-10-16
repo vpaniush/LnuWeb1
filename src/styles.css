@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(right,#4dff4d,#267326);
+    background-image: -o-linear-gradient(right,#4dff4d,#267326);
+    background-image: -moz-linear-gradient(right,#4dff4d,#267326);
+    background-image: -webkit-linear-gradient(right,#4dff4d,#267326);
+}
+
+.header {
+    height: 4.5em;
+    background-image: linear-gradient(left,#4dff4d,#267326);
+    background-image: -o-linear-gradient(left,#4dff4d,#267326);
+    background-image: -moz-linear-gradient(left,#4dff4d,#267326);
+    background-image: -webkit-linear-gradient(left,#4dff4d,#267326);
+    text-align: center;
+}
+
+.nav-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav-bar li {
+    display: grid;
+    width: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.nav-bar a {
+    padding: 0.5em;
+    background-color: white;
+    border: 1px solid #333;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-bar a:hover{
+    background-color: #4d4d4d;
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+#crsl-id {
+    margin: 2% 5% 3% 5%;
+}
+
+.slogan {
+    margin: 0 5%;
+    text-align: center;
+    font-size: 3em;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 5% 5%;
+}
+
+.card-item {
+    height: 200px;
+    border-radius: 3%;
+    margin: 1%;
+    padding: 1% 3%;
+    text-align: center;
+    background-color: white;
+}
+
+.card-item:hover {
+    color: white;
+    background-color: #4d4d4d;
+}
+
+.card-item h5 {
+    text-align: center;
+}
+
+.card-item p {
+    text-align: justify;
+}
+
+.card-item i {
+    font-size: 5em;
+    margin-top: 10%;
+}
+
+.card-item p.icon-text {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.footer {
+    height: 70px;
+    background-color: #b3ffb3;
+    padding-top: 1%;
+    padding-left: 5%;
+}
+
+.footer#contact {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.about {
+    margin: 0 20%;
+    padding: 1% 3%;
+    background-color: white;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.send-message {
+    margin: 4% 40%;
+}
+
+.send-message h3 {
+    text-align: center;
+}
+
+.send-message input, textarea#message {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+textarea#message {
+    height: 100px;
+    resize: none;
+}
+
+@media (max-device-width:480px) {
+    .slogan {
+        font-size: 1.5em;
+    }
+
+    .send-message {
+        margin: 4% 20%;
+    }
+
+    .send-message h3 {
+        font-size: 1.5em;
+    }
+
+    .send-message input, textarea#message {
+        border: 1px solid gray;
+    }
+
+    .header {
+        height: 3em;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+}
