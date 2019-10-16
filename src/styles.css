@@ -41,3 +41,41 @@
     width: 100%;
     height: 100%;
 }
+
+#crsl-id {
+    margin: 2% 5% 3% 5%;
+}
+
+.slogan {
+    margin: 0 5%;
+    text-align: center;
+    font-size: 3em;
+}
+
+@media (max-device-width:480px) {
+    .slogan {
+        font-size: 1.5em;
+    }
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 5% 5%;
+}
+
+.card-item {
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 2%;
+    margin: 1%;
+    padding: 1% 3%;
+}
+
+.card-item h5 {
+    text-align: center;
+}
+
+.card-item p {
+    text-align: justify;
+}
