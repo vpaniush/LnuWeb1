@@ -107,7 +107,7 @@ body {
 }
 
 .footer#contact {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -123,7 +123,7 @@ body {
 }
 
 .send-message {
-    margin: 4% 40%;
+    margin: 4% 35% 10% 35%;
 }
 
 .send-message h3 {
@@ -133,11 +133,23 @@ body {
 .send-message input, textarea#message {
     width: 100%;
     margin-bottom: 3%;
+    padding: 1%;
 }
 
 textarea#message {
     height: 100px;
     resize: none;
+}
+
+.send-message input[name="submit"] {
+    background-color: #ccffcc;
+    color: #4d4d4d;
+    border: none;
+}
+
+.send-message input[name="submit"]:hover {
+    background-color: #4d4d4d;
+    color: white;
 }
 
 @media (max-device-width:480px) {
