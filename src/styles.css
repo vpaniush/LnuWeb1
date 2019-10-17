@@ -152,6 +152,10 @@ textarea#message {
     color: white;
 }
 
+input, textarea:focus {
+    outline: none;
+}
+
 @media (max-device-width:480px) {
     .slogan {
         font-size: 1.5em;
